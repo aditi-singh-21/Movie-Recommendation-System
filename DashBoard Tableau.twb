@@ -31,37 +31,37 @@
       <connection class='federated'>
         <named-connections>
           <named-connection caption='movie_list' name='textscan.1bem2zs0ke7yht19522o01bd0ml3'>
-            <connection class='textclean' cleaning='yes' compat='no' csvFile='C:/Users/aditi/OneDrive/Desktop/PROJECTS/Movie-Recommendation-System/movie_list.csv' dataRefreshTime='' directory='C:/Users/aditi/OneDrive/Desktop/PROJECTS/Movie-Recommendation-System' filename='C:/Users/aditi/AppData/Local/Temp/TableauTemp/18uxnl50pvulkz16gvfvt1ku56ap/movie_list.csv.xlsx' interpretationMode='8' password='' server='' validate='no' />
+            <connection class='textclean' cleaning='yes' compat='no' csvFile='C:/Users/aditi/OneDrive/Desktop/PROJECTS/Movie-Recommendation-System/movie_list.csv' dataRefreshTime='' directory='C:/Users/aditi/OneDrive/Desktop/PROJECTS/Movie-Recommendation-System' filename='C:/Users/aditi/AppData/Local/Temp/TableauTemp/0k5m3vf1lnppow1e545k60tmlzzf/movie_list.csv.xlsx' interpretationMode='8' password='' server='' validate='no' />
           </named-connection>
         </named-connections>
         <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1bem2zs0ke7yht19522o01bd0ml3' name='movie_list.csv' table='[movie_list#csv$]' type='table'>
-          <columns character-set='UTF-8' gridOrigin='A1:K249:no:A1:K249:1' header='yes' locale='en_IN' separator=','>
-            <column datatype='string' name='Movie Name' ordinal='0' />
-            <column datatype='real' name='Rating' ordinal='1' />
-            <column datatype='integer' name='Year' ordinal='2' />
-            <column datatype='string' name='Director' ordinal='3' />
-            <column datatype='string' name='Writers' ordinal='4' />
-            <column datatype='integer' name='User Reviews' ordinal='5' />
-            <column datatype='string' name='Genre' ordinal='6' />
-            <column datatype='string' name='Summary' ordinal='7' />
-            <column datatype='string' name='URL' ordinal='8' />
-            <column datatype='string' name='Cast 1' ordinal='9' />
-            <column datatype='string' name='Cast 2' ordinal='10' />
+          <columns character-set='UTF-8' gridOrigin='A1:K250:no:A1:K250:2' header='yes' locale='en_IN' separator=','>
+            <column datatype='string' name='Movie Name Movie Name' ordinal='0' />
+            <column datatype='real' name='Rating Rating' ordinal='1' />
+            <column datatype='integer' name='Year Year' ordinal='2' />
+            <column datatype='string' name='Director Director' ordinal='3' />
+            <column datatype='string' name='Writers Writers' ordinal='4' />
+            <column datatype='integer' name='User Reviews User Reviews' ordinal='5' />
+            <column datatype='string' name='Genre Genre' ordinal='6' />
+            <column datatype='string' name='Summary Summary' ordinal='7' />
+            <column datatype='string' name='URL URL' ordinal='8' />
+            <column datatype='string' name='Cast 1 Cast 1' ordinal='9' />
+            <column datatype='string' name='Cast 2 Cast 2' ordinal='10' />
           </columns>
         </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
         <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1bem2zs0ke7yht19522o01bd0ml3' name='movie_list.csv' table='[movie_list#csv$]' type='table'>
-          <columns character-set='UTF-8' gridOrigin='A1:K249:no:A1:K249:1' header='yes' locale='en_IN' separator=','>
-            <column datatype='string' name='Movie Name' ordinal='0' />
-            <column datatype='real' name='Rating' ordinal='1' />
-            <column datatype='integer' name='Year' ordinal='2' />
-            <column datatype='string' name='Director' ordinal='3' />
-            <column datatype='string' name='Writers' ordinal='4' />
-            <column datatype='integer' name='User Reviews' ordinal='5' />
-            <column datatype='string' name='Genre' ordinal='6' />
-            <column datatype='string' name='Summary' ordinal='7' />
-            <column datatype='string' name='URL' ordinal='8' />
-            <column datatype='string' name='Cast 1' ordinal='9' />
-            <column datatype='string' name='Cast 2' ordinal='10' />
+          <columns character-set='UTF-8' gridOrigin='A1:K250:no:A1:K250:2' header='yes' locale='en_IN' separator=','>
+            <column datatype='string' name='Movie Name Movie Name' ordinal='0' />
+            <column datatype='real' name='Rating Rating' ordinal='1' />
+            <column datatype='integer' name='Year Year' ordinal='2' />
+            <column datatype='string' name='Director Director' ordinal='3' />
+            <column datatype='string' name='Writers Writers' ordinal='4' />
+            <column datatype='integer' name='User Reviews User Reviews' ordinal='5' />
+            <column datatype='string' name='Genre Genre' ordinal='6' />
+            <column datatype='string' name='Summary Summary' ordinal='7' />
+            <column datatype='string' name='URL URL' ordinal='8' />
+            <column datatype='string' name='Cast 1 Cast 1' ordinal='9' />
+            <column datatype='string' name='Cast 2 Cast 2' ordinal='10' />
           </columns>
         </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
         <metadata-records>
@@ -73,7 +73,7 @@
             <aggregation>Count</aggregation>
             <contains-null>true</contains-null>
             <attributes>
-              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='integer' name='context'>1</attribute>
               <attribute datatype='string' name='gridOrigin'>&quot;A1:K249:no:A1:K249:1&quot;</attribute>
               <attribute datatype='integer' name='lost'>0</attribute>
               <attribute datatype='integer' name='outcome'>1</attribute>
@@ -322,18 +322,18 @@
           <object caption='movie_list.csv' id='movie_list.csv_E0C131AD38BC43DE9BDA20E1520005CE'>
             <properties context=''>
               <relation connection='textscan.1bem2zs0ke7yht19522o01bd0ml3' name='movie_list.csv' table='[movie_list#csv$]' type='table'>
-                <columns character-set='UTF-8' gridOrigin='A1:K249:no:A1:K249:1' header='yes' locale='en_IN' separator=','>
-                  <column datatype='string' name='Movie Name' ordinal='0' />
-                  <column datatype='real' name='Rating' ordinal='1' />
-                  <column datatype='integer' name='Year' ordinal='2' />
-                  <column datatype='string' name='Director' ordinal='3' />
-                  <column datatype='string' name='Writers' ordinal='4' />
-                  <column datatype='integer' name='User Reviews' ordinal='5' />
-                  <column datatype='string' name='Genre' ordinal='6' />
-                  <column datatype='string' name='Summary' ordinal='7' />
-                  <column datatype='string' name='URL' ordinal='8' />
-                  <column datatype='string' name='Cast 1' ordinal='9' />
-                  <column datatype='string' name='Cast 2' ordinal='10' />
+                <columns character-set='UTF-8' gridOrigin='A1:K250:no:A1:K250:2' header='yes' locale='en_IN' separator=','>
+                  <column datatype='string' name='Movie Name Movie Name' ordinal='0' />
+                  <column datatype='real' name='Rating Rating' ordinal='1' />
+                  <column datatype='integer' name='Year Year' ordinal='2' />
+                  <column datatype='string' name='Director Director' ordinal='3' />
+                  <column datatype='string' name='Writers Writers' ordinal='4' />
+                  <column datatype='integer' name='User Reviews User Reviews' ordinal='5' />
+                  <column datatype='string' name='Genre Genre' ordinal='6' />
+                  <column datatype='string' name='Summary Summary' ordinal='7' />
+                  <column datatype='string' name='URL URL' ordinal='8' />
+                  <column datatype='string' name='Cast 1 Cast 1' ordinal='9' />
+                  <column datatype='string' name='Cast 2 Cast 2' ordinal='10' />
                 </columns>
               </relation>
             </properties>
@@ -916,7 +916,7 @@
           </datasource-dependencies>
           <filter class='quantitative' column='[federated.19qo7q40jwz2fr0zw2jyp0ihxlft].[sum:Rating:qk]' included-values='in-range'>
             <min>7.7999999999999998</min>
-            <max>7.9</max>
+            <max>7.9000000000000004</max>
           </filter>
           <shelf-sorts>
             <shelf-sort-v2 dimension-to-sort='[federated.19qo7q40jwz2fr0zw2jyp0ihxlft].[none:Movie Name:nk]' direction='ASC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.19qo7q40jwz2fr0zw2jyp0ihxlft].[sum:Rating:qk]' shelf='rows' />
@@ -1403,7 +1403,7 @@
         <zone h='29250' id='11' name='Sheet 8' w='29429' x='54857' y='2250' />
         <zone forceUpdate='true' h='16000' id='12' type-v2='text' w='16500' x='81000' y='2500'>
           <formatted-text>
-            <run bold='true' fontcolor='#ffffff' fontname='Tw Cen MT Condensed Extra Bold' fontsize='12'>TOP 250 BOLLYWOOD MOVIES ANALYSIS</run>
+            <run bold='true' fontalignment='1' fontcolor='#ffffff' fontname='Tw Cen MT Condensed Extra Bold' fontsize='12'>TOP 250 BOLLYWOOD MOVIES ANALYSIS</run>
           </formatted-text>
         </zone>
         <zone h='33375' id='13' name='Sheet 10' w='32571' x='1929' y='1750' />
@@ -1412,8 +1412,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='2050' minheight='2050' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='15' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='98000' id='14' param='vert' type-v2='layout-flow' w='98858' x='571' y='1000'>
+            <zone h='100000' id='17' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='16' param='vert' type-v2='layout-flow' w='98858' x='571' y='1000'>
                 <zone fixed-size='267' h='33375' id='13' is-fixed='true' name='Sheet 10' w='32571' x='1929' y='1750'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -1452,7 +1452,7 @@
                 </zone>
                 <zone forceUpdate='true' h='16000' id='12' type-v2='text' w='16500' x='81000' y='2500'>
                   <formatted-text>
-                    <run bold='true' fontcolor='#ffffff' fontname='Tw Cen MT Condensed Extra Bold' fontsize='12'>TOP 250 BOLLYWOOD MOVIES ANALYSIS</run>
+                    <run bold='true' fontalignment='1' fontcolor='#ffffff' fontname='Tw Cen MT Condensed Extra Bold' fontsize='12'>TOP 250 BOLLYWOOD MOVIES ANALYSIS</run>
                   </formatted-text>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -1513,7 +1513,7 @@
       <simple-id uuid='{46095B98-DAB8-4FA9-870C-EFAE4ED78FF9}' />
     </dashboard>
   </dashboards>
-  <windows saved-dpi-scale-factor='1.5' source-height='44'>
+  <windows saved-dpi-scale-factor='1.5' show-side-pane='false' source-height='44'>
     <window class='worksheet' name='Sheet 1'>
       <cards>
         <edge name='left'>
@@ -1623,7 +1623,7 @@
         <viewpoint name='Sheet 7' />
         <viewpoint name='Sheet 8' />
       </viewpoints>
-      <active id='9' />
+      <active id='-1' />
       <simple-id uuid='{91EBC636-3F34-4FA7-AEBA-79BFB34D1A1A}' />
     </window>
     <window class='worksheet' name='Sheet 4'>
