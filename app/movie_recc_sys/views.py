@@ -19,7 +19,8 @@ def home(request):
 
         # Retrieve poster paths for similar movies
         for similar_title in similar_movie_titles:
-            similar_poster_path = f"movie_posters/{similar_title.replace(' ', '_').lower()}.jpg"
+            similar_poster_filename = f"{similar_title}.jpg"
+            similar_poster_path = f"/posters/{similar_poster_filename}"
             similar_movies.append({
                 'title': similar_title,
                 'poster_path': similar_poster_path,
@@ -27,7 +28,7 @@ def home(request):
     else:
             form = MovieURLForm()
 
-    return render(request, 'home.html', {
+    return render(request, 'movie_recc_sys/home.html', {
         'form': form,
         'similar_movies': similar_movies,
     })
