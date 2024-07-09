@@ -131,4 +131,24 @@ def similar(url):
     vectorize_matrix = vectorize_matrix[:-1]
     return find_similar_movies(vectorize_matrix,input_vector,movies_name)
 
+def input_mov(url):
+    headers = {
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3',
+    'Accept-Language': 'en-US,en;q=0.9',
+    'Accept-Encoding': 'gzip, deflate, br',
+    'Connection': 'keep-alive',
+    'Upgrade-Insecure-Requests': '1',
+    'Referer': 'https://www.google.com/',
+}
 
+    response = requests.get(url, headers=headers , timeout=15)
+    response.raise_for_status()
+
+    soup = BeautifulSoup(response.text, 'html.parser')
+    
+    input_mov = []
+    
+    title = soup.find('div' ,{'class':'sc-491663c0-3 bdjVSf'})
+    title = title.find('span' ,{'class' : 'hero__primary-text'}).text
+    input_mov.append(title)
+    return input_mov
